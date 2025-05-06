@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Julia,Santoro\n\n";
+    cout << "JJJ     JJJ\n";
+    cout << "JJJJ   JJJJ\n";
+    cout << "JJ JJ JJ JJ\n";
+    cout << "JJ  JJJ  JJ\n";
+    cout << "JJ   J   JJ\n\n";
+
+
+     cout << "xxxxxxxx\n   xx   \n    xx    \n    xx    \n    xx    \n xxxx\n\n";
+
+    cout << "xxxxxx\nx      \nxx   xxxx\nxx      xx\nxx      xx\nxxxxxxxx";
+
+    return 0;
+
+}
