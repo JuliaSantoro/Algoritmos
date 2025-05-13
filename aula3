@@ -49,33 +49,33 @@ using namespace std;
 
 int main()
 {
-float extrato,salario, retiradas;
+float extrato, operacoes;
 
 cout << "EXTRATO BANCARIO\nSaldo Inicial: ";
 cin >> extrato;
 
 cout << "Salario: ";
-cin >> salario;
+cin >> operacoes;
 
-extrato = extrato + salario;
+extrato = extrato + operacoes;
 cout << "Saldo parcial: " << extrato ;
 
 
 cout << "\nPrimeira retirada: ";
-cin >> retiradas;
-extrato = extrato - retiradas;
+cin >> operacoes;
+extrato = extrato - operacoes;
 cout << "Saldo parcial: " << extrato;
 
 
 cout << "\nSegunda retirada: ";
-cin >> retiradas;
-extrato = extrato - retiradas;
+cin >> operacoes;
+extrato = extrato - operacoes;
 cout << "Saldo parcial: " << extrato;
 
 
 cout << "\nTerceira retirada: ";
-cin >> retiradas;
-extrato = extrato - retiradas;
+cin >> operacoes;
+extrato = extrato - operacoes;
 cout << "\nSaldo parcial: " << extrato;
 
 return 0;
