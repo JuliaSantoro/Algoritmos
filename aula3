@@ -1,0 +1,82 @@
+//-----------------------------1 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int valor_1, valor_2;
+
+cout << "OPERACOES SOBRE INTEIROS\nDigite o primeiro valor: ";
+cin >> valor_1;
+
+cout << "Digite o segundo valor: ";
+cin >> valor_2;
+
+cout << valor_1 << "+" << valor_2 << "=" << valor_1 + valor_2 << "\n";
+cout << valor_1 << "-" << valor_2 << "=" << valor_1 - valor_2 << "\n";
+cout << valor_1 << "*" << valor_2 << "=" << valor_1 * valor_2 << "\n";
+cout << valor_1 << "/" << valor_2 << "=" << valor_1 / valor_2 << "\n";
+cout << valor_1 << "%" << valor_2 << "=" << valor_1 % valor_2 << "\n";
+
+
+return 0;
+}
+
+//--------------------------------- 2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+float peso, altura,imc;
+    
+cout << "Digite o peso em kg: ";
+cin >> peso;
+
+cout << "Digite a altura em m: ";
+cin >> altura;
+
+imc = peso/ (altura * altura);
+
+cout << " Valor do IMC: " << imc;
+return 0;
+}
+
+//--------------------------------- 3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+float extrato,salario, retiradas;
+
+cout << "EXTRATO BANCARIO\nSaldo Inicial: ";
+cin >> extrato;
+
+cout << "Salario: ";
+cin >> salario;
+
+extrato = extrato + salario;
+cout << "Saldo parcial: " << extrato ;
+
+
+cout << "\nPrimeira retirada: ";
+cin >> retiradas;
+extrato = extrato - retiradas;
+cout << "Saldo parcial: " << extrato;
+
+
+cout << "\nSegunda retirada: ";
+cin >> retiradas;
+extrato = extrato - retiradas;
+cout << "Saldo parcial: " << extrato;
+
+
+cout << "\nTerceira retirada: ";
+cin >> retiradas;
+extrato = extrato - retiradas;
+cout << "\nSaldo parcial: " << extrato;
+
+return 0;
+}
