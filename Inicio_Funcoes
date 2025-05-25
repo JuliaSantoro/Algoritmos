@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+void teste () {
+    cout << "Insira dois numeros\n"; 
+}
+
+
+int somar (int x, int y) {
+  int soma;
+  soma = x + y;
+  return soma;
+}
+  
+  
+int main()
+{
+    int a,b, resultado;
+    teste();
+    cin >> a;
+    cin >> b;
+    resultado = somar(a,b);
+    cout << "O valor da soma é:" << resultado;
+    return 0;
+}
