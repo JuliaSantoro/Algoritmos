@@ -1,0 +1,14 @@
+//--------------------- questao 1
+#include <iostream>
+
+using namespace std;
+
+float temperatura (float far) {
+  float cel;
+  cel = (far-32)/1.8;
+  return cel;
+}
+
+
+
+
