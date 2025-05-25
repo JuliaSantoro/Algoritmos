@@ -1,4 +1,4 @@
-//--------------------- questao 1
+//---------------------------------------------------- questao 1
 #include <iostream>
 
 using namespace std;
@@ -9,7 +9,7 @@ float temperatura (float far) {
   return cel;
 }
 
-//-------------------- questao 2
+//---------------------------------------------------- questao 2
 #include <iostream>
 #include <iomanip> 
 
@@ -30,7 +30,7 @@ int main () {
     cout << "COMPRA A PRAZO\nValor da parcela a prazo: R$ " << operacao(a,b);
 }
 
-//------------- questao 3
+//---------------------------------------------------- questao 3
 #include <iostream>
 #include <iomanip> 
 
@@ -46,6 +46,38 @@ int main() {
     cout << fixed << setprecision(2);
     cout <<"R$" << operacao(a);
 }
+
+//---------------------------------------------------- questao 4
+#include <iostream>
+
+using namespace std;
+
+int notas_100, notas_50, notas_20, notas_10, notas_5, notas_2, notas_1;
+
+void operacao (int valor){
+    notas_100 = valor/100;
+    notas_50 = (valor % 100)/50;
+    notas_20 = ((valor % 100)%50)/20;
+    notas_10 = (((valor % 100)%50)%20)/10;
+    notas_5 = ((((valor % 100)%50)%20)%10)/5;
+    notas_2 = (((((valor % 100)%50)%20)%10)%5)/2;
+    notas_1 = (((((valor % 100)%50)%20)%10)%5)%2;
+}
+
+int main() {
+    int a; 
+    cin >> a;
+    operacao(a);
+    cout << a << "\n";
+    cout << notas_100 << " nota(s) de R$ 100,00\n";
+    cout << notas_50 << " nota(s) de R$ 50,00\n";
+    cout << notas_20 << " nota(s) de R$ 20,00\n";
+    cout << notas_10 << " nota(s) de R$ 10,00\n";   
+    cout << notas_5 << " nota(s) de R$ 5,00\n";  
+    cout << notas_2 << " nota(s) de R$ 2,00\n"; 
+    cout << notas_1 << " nota(s) de R$ 1,00\n";  
+}
+
 
 
 
