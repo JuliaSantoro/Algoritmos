@@ -24,12 +24,29 @@ float operacao (float compra, int parcelas) {
 int main () {
     float a;
     int b;
-    cin >> a;
-    cin >> b;
+    cin >> a >> b;
        
     cout << fixed << setprecision(2);
     cout << "COMPRA A PRAZO\nValor da parcela a prazo: R$ " << operacao(a,b);
 }
+
+//------------- questao 3
+#include <iostream>
+#include <iomanip> 
+
+using namespace std;
+
+float operacao (float quantidade){
+    return quantidade * 0.618 * 1.18;
+}
+
+int main() {
+    float a; 
+    cin >> a;
+    cout << fixed << setprecision(2);
+    cout <<"R$" << operacao(a);
+}
+
 
 
 
