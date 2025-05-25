@@ -9,6 +9,28 @@ float temperatura (float far) {
   return cel;
 }
 
+//-------------------- questao 2
+#include <iostream>
+#include <iomanip> 
+
+using namespace std;
+
+float operacao (float compra, int parcelas) {
+  float valor;
+  valor = compra/parcelas;
+  return valor;
+}
+
+int main () {
+    float a;
+    int b;
+    cin >> a;
+    cin >> b;
+       
+    cout << fixed << setprecision(2);
+    cout << "COMPRA A PRAZO\nValor da parcela a prazo: R$ " << operacao(a,b);
+}
+
 
 
 
