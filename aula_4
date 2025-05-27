@@ -127,3 +127,47 @@ int main (){
     return 0;
 }
 
+
+------------------------------------------------------ verifica numero positivo e da nova chance 
+#include <iostream>
+
+using namespace std;
+
+bool LeNumeroPositivo (int x){
+   if (x > 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+
+int main ()
+{
+    int a;
+    cin >> a;
+
+    if (LeNumeroPositivo(a)==true)
+    {
+        cout << a << "\n";
+    }
+    else
+    {
+        cout <<"você terá mais uma chance para digitar um valor\n";
+        cin >> a;
+        if (LeNumeroPositivo(a)==true)
+        {
+            cout << a;
+        }
+        else if (LeNumeroPositivo(a)==false)
+        {
+            cout <<"o valor nao é positivo";
+        }
+    }
+
+    return 0;
+}
+
