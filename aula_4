@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int ImprimeDivisaoInteira(int a,int b){
+    return a/b;
+}
+
+float ImprimeDivisaoReal(float a,float b){
+    return a/b;
+}
+
+int main (){
+    int n_1, n_2;
+    cin >> n_1 >> n_2;
+    if (n_2 == 0)
+{
+    cout << "Não é possível realizar a divisão";
+}
+    else
+{
+    cout << ImprimeDivisaoInteira(n_1,n_2) << "\n";
+    cout << ImprimeDivisaoReal(n_1,n_2);
+}
+    return 0;
+}
