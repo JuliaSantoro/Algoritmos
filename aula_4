@@ -66,3 +66,39 @@ int main (){
 
     return 0;
 }
+
+
+----------------------------------------------------------------- funcao bool para numeros positivos e if para retorno da bool
+#include <iostream>
+
+using namespace std;
+
+bool SaoPositivos (float a,float b){
+   if (a && b > 0)
+{
+    return true;
+}
+    else
+{
+    return false;
+}
+}
+
+
+int main (){
+    int n_1, n_2;
+    cin >> n_1 >> n_2;
+
+    if (SaoPositivos(n_1,n_2)==true)
+{
+    cout << "Ambos os valores sao positivos";
+}
+    else
+{
+    cout << "Ao menos um dos valores eh negativo";
+}
+    cout << "\n";
+
+    return 0;
+}
+
