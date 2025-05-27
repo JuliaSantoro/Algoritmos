@@ -1,3 +1,4 @@
+----------------------------------------------------------------- divisao por inteiro e float e condicao com denominador zero
 #include <iostream>
 
 using namespace std;
@@ -22,5 +23,46 @@ int main (){
     cout << ImprimeDivisaoInteira(n_1,n_2) << "\n";
     cout << ImprimeDivisaoReal(n_1,n_2);
 }
+    return 0;
+}
+
+---------------------------------------------- com if dentro da funcao
+#include <iostream>
+
+using namespace std;
+
+void ImprimeDivisaoInteira (int a,int b){
+   if (b == 0)
+{
+    cout << "Não é possível realizar a divisão";
+}
+    else
+{
+    cout << a/b;
+}
+}
+
+void ImprimeDivisaoReal (float a,float b){
+   if (b == 0)
+{
+    cout << "Não é possível realizar a divisão";
+}
+    else
+{
+    cout << a/b;
+}
+}
+
+int main (){
+    int n_1, n_2;
+    cin >> n_1 >> n_2;
+    ImprimeDivisaoInteira(n_1,n_2);
+    cout << "\n";
+    ImprimeDivisaoReal(n_1, n_2);
+
+    return 0;
+}
+    ImprimeDivisaoInteira(n_1,n_2);
+
     return 0;
 }
