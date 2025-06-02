@@ -1,0 +1,112 @@
+----------------------------------------------------------------- questao 1
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+void funcao(float a, float b, char c) {
+    switch (c) {
+        case '+':
+            cout << a + b;
+            break;
+        case '-':
+            cout << a - b;
+            break;
+        case '*':
+            cout << a * b;
+            break;
+        case '/':
+            cout << a / b;
+            break; }}
+
+
+int main() {
+    double x, y;
+    char z;
+
+    cin >> x >> y >> z;
+    
+    cout << fixed << setprecision(1);
+
+    cout << x << " " << z << " " << y << " = "; 
+    funcao(x, y, z);
+
+    return 0;}
+
+----------------------------------------------------------------- questao 2
+#include <iostream>
+
+using namespace std;
+
+void funcao(int a, int b) {
+    if (b == 0){
+        cout << "A divisao nao pode ser realizada";
+    }
+    else {
+        cout << "Parte inteira: " << a/b << " ; Resto: " << a%b;}
+}
+
+int main (){
+    int x,y;
+    cin >> x >> y; 
+    funcao(x,y);}
+----------------------------------------------------------------- questao 3
+#include <iostream>
+
+using namespace std;
+
+void verificaSinal (int a) {
+    if (a>0){
+        cout << "Positivo";
+    }
+    else if (a<0){
+        cout << "Negativo";   
+    }
+    else if (a==0){
+        cout << "Zero";
+    }
+}
+int main (){
+    int x;
+    cin >> x;
+    verificaSinal(x);
+    return 0;
+}
+----------------------------------------------------------------- questao 4
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+float calculaPesoIdeal (char a, float b){
+    switch(a){
+        case 'm':
+        case 'M':
+            return (72.7 * b) - 58;
+            break;
+        case 'f':
+        case 'F':
+            return (62.1 * b) - 44.7;
+            break;
+        default :
+            return 0;}}
+
+
+int main (){
+    char x;
+    float y, z;
+    cin >> x >> y >> z;
+    cout << fixed << setprecision(4);
+    if (calculaPesoIdeal(x,y)== 0){
+        cout << "O calculo do peso nao e possivel!";}
+    else if (calculaPesoIdeal(x,y)> z){
+        cout << "PESO IDEAL: " << calculaPesoIdeal(x,y);
+        cout << "\nA pessoa esta abaixo do peso ideal.";}
+    else if(calculaPesoIdeal(x,y)< z){
+        cout << "PESO IDEAL: " << calculaPesoIdeal(x,y);
+        cout << "\nA pessoa esta acima do peso ideal.";}
+    else if (calculaPesoIdeal(x,y)== z){
+        cout << "PESO IDEAL: " << calculaPesoIdeal(x,y);
+        cout << "\nA pessoa esta no peso ideal.";}
+    return 0;
+}
