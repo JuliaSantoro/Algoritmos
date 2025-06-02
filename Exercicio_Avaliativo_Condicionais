@@ -110,3 +110,35 @@ int main (){
         cout << "\nA pessoa esta no peso ideal.";}
     return 0;
 }
+
+
+----------------------------------------------------------------- questao 5
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+float funcao(int a, int b){
+    if (a >= 1 && a <= 5){
+        return b * 5.00;
+    }
+    else if (a > 5 && a <= 10){
+        return b * 10.00;
+    }
+    else if (a > 10 && a <= 15){
+        return b * 15.00;
+    }
+    else if (a > 15 && a <= 20){
+        return b * 20.00;
+    }
+    else {
+        return 0;
+    }
+}
+
+int main (){
+    int x, y;
+    cin >> x >> y;
+    cout << fixed << setprecision(2);
+    cout << "R$ " << funcao(x,y);
+}
