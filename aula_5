@@ -51,5 +51,28 @@ int main (){
 }
 
 ------------------------------------------------------------ questao 3
+#include <iostream>
 
+using namespace std;
+
+void funcao(int a){
+  int linha = 1;
+  while (linha <= a){
+    int b = 1;
+    while (linha >= b)
+    {
+      cout << b++ << " ";
+    }
+    cout << "\n";
+    linha++;
+  }
+}
+
+int main (){
+  int x;
+  cin >> x;
+  
+  funcao(x);
+  
+}
 
