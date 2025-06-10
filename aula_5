@@ -1,0 +1,55 @@
+------------------------------------------------------------ questao 1 
+#include <iostream>
+using namespace std;
+
+void funcao (int a){
+  int x, negativo, ordem;
+  negativo = 0;
+  ordem = 0;
+  
+  while (ordem<a){
+    if (x<0){
+      negativo++;
+    }
+    ordem++;
+    cin >> x;
+  }
+  
+  cout << negativo;
+}
+
+int main (){
+  int y;
+  cin >> y;
+  funcao(y);
+}
+
+------------------------------------------------------------ questao 2
+#include <iostream>
+
+using namespace std;
+
+void funcao(int a, int b){
+  if(a>b){
+    while (a >= b)
+    {
+      cout << a-- << " ";
+    }
+  }
+  else {
+    while (a <= b)
+    {
+      cout << a++ << " ";
+    }
+  }
+}
+
+int main (){
+  int x, y;
+  cin >> x >> y;
+  funcao(x,y);
+}
+
+------------------------------------------------------------ questao 3
+
+
