@@ -103,3 +103,43 @@ int main (){
     cin >> b;
     funcao(b);
 }
+
+
+--------------------------------------------------------- questao 4 b)
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+void funcao (int a){
+
+    
+    int i = 0;
+    
+    cout << x << ", " << y << endl;  
+            
+    while(i<= 3){
+        
+        if(a!=x*y){
+        cout << "Erro, tente novamente\n";
+        cin >> a;
+            
+        }
+        else{
+            cout << "Correto\n";
+            i++;
+            cin >> a;
+        }
+    }
+    
+    cout << "Concluido";
+
+}
+
+int main (){
+    int b;
+    cin >> b;
+    funcao(b);
+}
+
