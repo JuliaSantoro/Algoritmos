@@ -76,3 +76,30 @@ int main (){
   
 }
 
+------------------------------------------------------------ questao 4 a)
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+void funcao (int a){
+    srand(time(0));
+    
+    int x = rand() % 10;
+    int y = rand() % 10;
+    
+    
+    while(a!=x*y){
+        cout << "Erro, tente novamente\n";
+        cin >> a;
+    }
+    
+    cout << "correto";
+}
+
+int main (){
+    int b;
+    cin >> b;
+    funcao(b);
+}
