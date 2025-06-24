@@ -1,0 +1,51 @@
+#include <iostream>
+
+using namespace std;
+
+void funcao (){
+    int quantidade;
+    int contador = 0;
+    
+    int n1;char b1; int d1; char op; int n2;char b2; int d2;
+    
+    int dividendo; int numerador; int denominador;
+    
+    cin >> quantidade;
+    
+    while(contador < quantidade){
+        cin >> n1 >> b1 >> d1 >> op >> n2 >> b2 >> d2;
+        dividendo = 1;
+        
+        if(op=='+'){
+            numerador = (n1*d2 + n2*d1);
+            denominador = (d1*d2);}  
+            
+        else if(op=='-'){ 
+            numerador = (n1*d2 - n2*d1);
+            denominador = (d1*d2);}
+            
+        else if(op=='*'){
+            numerador = (n1*n2);
+            denominador = (d1*d2);}
+
+        else if(op=='/'){
+            numerador = (n1*d2);
+            denominador = (d1*n2);}
+        
+        cout << numerador << '/' << denominador << " = ";
+        
+        while(dividendo<numerador && dividendo<denominador){
+            if(numerador%dividendo==0 && denominador%dividendo==0){    
+                numerador = numerador/dividendo;
+                denominador = denominador/dividendo;
+                dividendo = 1;}
+                    
+            dividendo++;}
+                
+        cout << numerador << '/' << denominador;
+        contador++;}}
+    
+
+    int main(){
+    funcao();
+    return 0;}
